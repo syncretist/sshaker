@@ -1,7 +1,13 @@
 # depends on manifest.yml being in the same directory
+require 'colorize'
 
 manifest = YAML.load_file('./manifest.yml')
 
 applications = manifest.keys
 
-applications.each { |a| puts manifest[a] }
+applications.each do |a|
+  puts "==" + "#{a}".yellow.bold + "=="
+  pp manifest[a]
+end
+
+puts ""

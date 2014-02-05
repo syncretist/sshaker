@@ -1,1 +1,4 @@
+.rvmrc
+.idea/
+Gemfile.lock
 manifest.yml

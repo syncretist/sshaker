@@ -20,8 +20,12 @@ function start-sshaker(){
 echo -e "\n"
 echo -e " \e[00;31m>>sshaker\e[00m : interactive"
 echo -e ""
+echo -e ""
+echo -e "To edit the manifest use '\e[00;33msshaker-e\e[00m'"
+echo -e ""
 pry -r ./lib/startup
 }
 
 alias  sshaker='cd ~/code/sshaker && start-sshaker'
+alias  sshaker-e='subl ~/code/sshaker/manifest.yml'
 ```
